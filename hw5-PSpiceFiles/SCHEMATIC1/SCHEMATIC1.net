@@ -1,0 +1,12 @@
+* source HW5
+T_T1         N14444 0 N14448 0 Z0=75 TD=50ns  
+R_R1         N14437 N14444  25 TC=0,0 
+R_R2         0 N14448  1k TC=0,0 
+V_V2         N14437 0  
++PULSE 0 5 50ns 1p 1p 1s 2s
+T_T2         N15252 0 N15258 0 Z0=75 TD=50ns  
+R_R3         N15242 N15252  25 TC=0,0 
+V_V3         N15242 0  
++PULSE 0 5 50ns 1p 1p 1s 2s
+R_R4         0 N15354  1k TC=0,0 
+T_T3         N15258 0 N15354 0 Z0=75 TD=50ns  
