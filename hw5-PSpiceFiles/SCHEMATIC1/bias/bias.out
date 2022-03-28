@@ -1,7 +1,7 @@
 
-**** 03/28/22 17:38:51 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+**** 03/28/22 18:16:09 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-bias"  [ C:\Users\grboehringer\Documents\hw5-pspicefiles\schematic1\bias.sim ] 
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\grboehringer\Documents\hw5\hw5-pspicefiles\schematic1\bias.sim ] 
 
 
  ****     CIRCUIT DESCRIPTION
@@ -22,7 +22,7 @@
 .lib "nom.lib" 
 
 *Analysis directives: 
-.TRAN  0 500ns 0 
+.TRAN  0 3000ns 0 
 .OPTIONS ADVCONV
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
 .INC "..\SCHEMATIC1.net" 
@@ -46,9 +46,9 @@ T_T3         N15258 0 N15354 0 Z0=75 TD=50ns
 **** RESUMING bias.cir ****
 .END
 
-**** 03/28/22 17:38:51 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+**** 03/28/22 18:16:09 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-bias"  [ C:\Users\grboehringer\Documents\hw5-pspicefiles\schematic1\bias.sim ] 
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\grboehringer\Documents\hw5\hw5-pspicefiles\schematic1\bias.sim ] 
 
 
  ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -80,9 +80,9 @@ T_T3         N15258 0 N15354 0 Z0=75 TD=50ns
 
           JOB CONCLUDED
 
-**** 03/28/22 17:38:51 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+**** 03/28/22 18:16:09 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-bias"  [ C:\Users\grboehringer\Documents\hw5-pspicefiles\schematic1\bias.sim ] 
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\grboehringer\Documents\hw5\hw5-pspicefiles\schematic1\bias.sim ] 
 
 
  ****     JOB STATISTICS SUMMARY
@@ -92,5 +92,5 @@ T_T3         N15258 0 N15354 0 Z0=75 TD=50ns
 
 
 
-  Total job time (using Solver 1)   =        0.00
+  Total job time (using Solver 1)   =         .02
 
