@@ -1,7 +1,7 @@
 
-**** 03/28/22 18:16:09 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+**** 03/29/22 01:58:20 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-bias"  [ C:\Users\grboehringer\Documents\hw5\hw5-pspicefiles\schematic1\bias.sim ] 
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\grboehringer\Documents\dig-hw5\hw5-pspicefiles\schematic1\bias.sim ] 
 
 
  ****     CIRCUIT DESCRIPTION
@@ -22,7 +22,7 @@
 .lib "nom.lib" 
 
 *Analysis directives: 
-.TRAN  0 3000ns 0 
+.TRAN  0 1000ns 0 
 .OPTIONS ADVCONV
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
 .INC "..\SCHEMATIC1.net" 
@@ -37,18 +37,20 @@ R_R2         0 N14448  1k TC=0,0
 V_V2         N14437 0  
 +PULSE 0 5 50ns 1p 1p 1s 2s
 T_T2         N15252 0 N15258 0 Z0=75 TD=50ns  
-R_R3         N15242 N15252  25 TC=0,0 
+R_R3         N15242 N15252  75 TC=0,0 
 V_V3         N15242 0  
 +PULSE 0 5 50ns 1p 1p 1s 2s
-R_R4         0 N15354  1k TC=0,0 
-T_T3         N15258 0 N15354 0 Z0=75 TD=50ns  
+R_R4         0 N15354  1MEG TC=0,0 
+T_T3         N15626 0 N15354 0 Z0=200 TD=50ns  
+R_R5         N15258 N15626  158 TC=0,0 
+R_R6         0 N15258  95 TC=0,0 
 
 **** RESUMING bias.cir ****
 .END
 
-**** 03/28/22 18:16:09 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+**** 03/29/22 01:58:20 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-bias"  [ C:\Users\grboehringer\Documents\hw5\hw5-pspicefiles\schematic1\bias.sim ] 
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\grboehringer\Documents\dig-hw5\hw5-pspicefiles\schematic1\bias.sim ] 
 
 
  ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -63,7 +65,7 @@ T_T3         N15258 0 N15354 0 Z0=75 TD=50ns
 
 (N14437)    0.0000 (N14444)    0.0000 (N14448)    0.0000 (N15242)    0.0000     
 
-(N15252)    0.0000 (N15258)    0.0000 (N15354)    0.0000 
+(N15252)    0.0000 (N15258)    0.0000 (N15354)    0.0000 (N15626)    0.0000 
 
 
 
@@ -80,9 +82,9 @@ T_T3         N15258 0 N15354 0 Z0=75 TD=50ns
 
           JOB CONCLUDED
 
-**** 03/28/22 18:16:09 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+**** 03/29/22 01:58:20 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-bias"  [ C:\Users\grboehringer\Documents\hw5\hw5-pspicefiles\schematic1\bias.sim ] 
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\grboehringer\Documents\dig-hw5\hw5-pspicefiles\schematic1\bias.sim ] 
 
 
  ****     JOB STATISTICS SUMMARY
